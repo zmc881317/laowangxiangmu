@@ -48,7 +48,7 @@ jobs:
           context: .
           push: true
           tags: |
-            - ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ steps.vars.outputs.repo_lower }}
             org.opencontainers.image.description=http server
